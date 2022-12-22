@@ -6,6 +6,7 @@
 # generated numbers.
 
 import random
+import constants
 
 
 def lowestRandNum(list_of_num):
@@ -22,8 +23,8 @@ def main():
     # Defining variables.
     rand_num_list = []
     # Getting random numbers to fill up the random number array/list.
-    for i in range(0, MAX_ARRAY_SIZE):
-        random_num = random.randint(MIN_NUM, MAX_NUM)
+    for i in range(0, constants.MAX_ARRAY_SIZE):
+        random_num = random.randint(constants.MIN_NUM, constants.MAX_NUM)
         rand_num_list.append(random_num)
     final_num = lowestRandNum(rand_num_list)
     print(f"{rand_num_list}\n")
